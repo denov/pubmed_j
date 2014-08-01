@@ -1,5 +1,5 @@
 #pubmed_j 
-### A Pubmed fetcher and parser for Java.
+### A PubMed fetcher and parser for Java.
 
  
 
