@@ -1,3 +1,15 @@
-Pubmed fetch and parser for Java.
+#pubmed_j 
+### A Pubmed fetcher and parser for Java.
 
- * http://www.ncbi.nlm.nih.gov/pubmed
+ 
+
+Usage:
+ 
+To fetch http://www.ncbi.nlm.nih.gov/pubmed/11786451 
+
+```java
+PubMedDoc doc = PubmedFetcher.fetchAndParse("11786451");  
+```
+
+
+

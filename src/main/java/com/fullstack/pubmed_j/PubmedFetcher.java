@@ -10,11 +10,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.xml.sax.SAXException;
 
-//import javax.persistence.EntityNotFoundException;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.xpath.XPathExpressionException;
 import java.io.IOException;
-import java.util.NoSuchElementException;
 
 
 public class PubmedFetcher {
@@ -36,10 +34,9 @@ public class PubmedFetcher {
 
     public static String fetch(String pubmedId) {
         String pubMedDoc;
-
         CloseableHttpClient client = null;
-        try {
 
+        try {
             client = HttpClientBuilder.create().build();
             HttpGet getRequest = new HttpGet("http://www.ncbi.nlm.nih.gov/pubmed/" + pubmedId + "?report=xml&format=text");
             HttpResponse response = client.execute(getRequest);

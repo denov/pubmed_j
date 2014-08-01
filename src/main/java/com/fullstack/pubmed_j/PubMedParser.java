@@ -118,7 +118,6 @@ public class PubMedParser {
         //medlineCitation.addCommentsCorrection();
 
 
-
         return medlineCitation;
     }
 
